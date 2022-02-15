@@ -2,6 +2,7 @@
 <p><%= @task.details%></p>
 <p><%= @task.completed%></p>
 
+<div class="container">
 <%= link_to "Edit this task", task_edit_path(@task) %>
 
 <%= link_to "Delete #{@task.title}",
@@ -10,3 +11,4 @@
             data: { confirm: "Are you sure?" } %>
 
 <%= link_to "View tasks", tasks_path %>
+</div>

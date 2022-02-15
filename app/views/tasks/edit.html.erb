@@ -1,3 +1,5 @@
+<h1 class="title"> Edit your Task</h1>
+<div class="container">
 <%= form_for(@task) do |f| %>
   <%= f.label :title, class: 'form-label' %>
   <%= f.text_field :title, class: 'form-control' %>
@@ -7,3 +9,4 @@
   <%= f.check_box :completed %>
   <%= f.submit class: 'btn btn-primary mt-2' %>
 <% end %>
+</div>
